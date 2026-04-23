@@ -31,7 +31,7 @@ public class Regiao {
 
     @Override
     public String toString() {
-        return "Regiao{" + "Id=" + Id + ", nome=" + nome + '}';
+        return "Regiao - ID:" + Id + ", nome=" + nome + '}';
     }
     
    
