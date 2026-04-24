@@ -9,16 +9,16 @@ package entities;
  * @author Dênio Mingote
  */
 public class Regiao {
-    private int id;
+    private int Id;
     private String nome;
 
-    public Regiao(int id, String nome) {
-        this.id = id;
+    public Regiao(int Id, String nome) {
+        this.Id = Id;
         this.nome = nome;
     }
 
     public int getId() {
-        return id;
+        return Id;
     }
 
     public String getNome() {
@@ -31,7 +31,7 @@ public class Regiao {
 
     @Override
     public String toString() {
-        return "Regiao - ID: " + id + ", Nome: " + nome;
+        return "Regiao - ID:" + Id + ", nome=" + nome + '}';
     }
     
    
