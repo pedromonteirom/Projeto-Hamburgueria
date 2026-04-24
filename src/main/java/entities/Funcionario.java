@@ -13,7 +13,7 @@ public class Funcionario extends Usuario{
     private String cargo;
     private String telefone;
     
-    public Funcionario(String nome, String login, String senha, String cargo, String telefone) {
+        public Funcionario(String nome, String login, String senha, String cargo, String telefone) {
         super(nome, login, senha);
         this.cargo = cargo;
         this.telefone = telefone;
@@ -41,11 +41,11 @@ public class Funcionario extends Usuario{
         this.telefone = telefone;
     }
 
-
+}
 @Override
     public String toString(){
         return "Funcionario - ID: " + getId() + ", Nome: " + getNome() 
                 + ", Login: " + getLogin() + ", Senha: " + getSenha() 
-                + ", Telefone: " + getTelefone() + ", Cargo: " + getCargo();
+                + ", Telefone: " + getTelefone() + ",Cargo: " + getCargo();
     }
 }
