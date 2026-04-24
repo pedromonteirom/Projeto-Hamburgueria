@@ -42,11 +42,11 @@ public class Administrador extends Usuario {
     }
     
     
-     
+            
+}
 @Override
     public String toString(){
         return "Administrador - ID: " + getId() + ", Nome: " + getNome() 
                 + ", Login: " + getLogin() + ", Senha: " + getSenha() 
                 + ", Telefone: " + getTelefone() + ",Email: " + getEmail();
     }
-}
