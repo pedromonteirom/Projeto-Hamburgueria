@@ -9,29 +9,22 @@ package entities;
  *
  * @author Dênio Mingote
  */
-public abstract class Usuario {
+public class Usuario {
     private static int proximoId;
-    private int id;
+    private int Id;
     private String nome;
     private String login;
     private String senha;
     
     public Usuario(String nome, String login, String senha){
-        this.id = ++proximoId;
+        this.Id = ++proximoId;
         this.login = login;
         this.nome = nome;
-        this.senha = senha;          
+        this.senha = senha;       
+           
     }
-
-    public Usuario(int id, String nome, String login, String senha) {
-        this.id = id;
-        this.nome = nome;
-        this.login = login;
-        this.senha = senha;
-    }
-    
     public int getId() {
-        return id;
+        return Id;
     }
 
     public String getNome() {
@@ -70,7 +63,7 @@ public abstract class Usuario {
 
     @Override
     public String toString() {
-        return "Usuário - ID: " + id + ", Nome: " + nome + ", Login: " + login + ", Senha: " + senha;
+        return "Usuario {" + "Id=" + Id + ", nome=" + nome + ", login=" + login + ", senha=" + senha + '}';
     }
      
 }
