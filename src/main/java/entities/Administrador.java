@@ -8,6 +8,10 @@ package entities;
  *
  * @author Pedro
  */
+/**
+ * Representa o administrador do sistema.
+ * Herda de {@link Usuario} e possui acesso total ao sistema.
+ */
 public class Administrador extends Usuario {
     
     private String email;

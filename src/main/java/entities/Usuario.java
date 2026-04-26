@@ -9,6 +9,9 @@ package entities;
  *
  * @author Dênio Mingote
  */
+/**
+ * Classe abstrata que representa um usuário do sistema (Administrador ou Colaborador).
+ */
 public abstract class Usuario {
     private static int proximoId;
     private int id;

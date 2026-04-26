@@ -8,6 +8,10 @@ package entities;
  *
  * @author Pedro
  */
+/**
+ * Representa um funcionário do sistema.
+ * Herda de {@link Usuario}.
+ */
 public class Funcionario extends Usuario{
        
     private String cargo;

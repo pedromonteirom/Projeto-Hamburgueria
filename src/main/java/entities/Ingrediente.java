@@ -8,6 +8,10 @@ package entities;
  *
  * @author Pedro
  */
+/**
+ * Representa um ingrediente utilizado nos lanches.
+ * Armazena quantidade atual, unidade de medida e quantidade mínima para alerta de estoque.
+ */
 public class Ingrediente {
     
     private int id;

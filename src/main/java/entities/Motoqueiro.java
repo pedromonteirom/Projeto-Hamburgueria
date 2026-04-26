@@ -8,6 +8,10 @@ package entities;
  *
  * @author Dênio Mingote
  */
+/**
+ * Representa um motoqueiro responsável pelas entregas.
+ * O sistema mantém no mínimo 5 motoqueiros ativos.
+ */
 public class Motoqueiro {
 
     private static int proximoId;

@@ -8,6 +8,9 @@ package entities;
  *
  * @author Pedro
  */
+/**
+ * Representa um adicional que pode ser acrescentado a um lanche (ex: bacon extra, queijo duplo).
+ */
 public class Adicional {
 
     private int id;

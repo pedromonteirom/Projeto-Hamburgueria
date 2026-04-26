@@ -8,6 +8,9 @@ package entities;
  *
  * @author Dênio Mingote
  */
+/**
+ * Representa uma região (bairro ou área) de entrega da hamburgueria.
+ */
 public class Regiao {
     private int id;
     private String nome;
