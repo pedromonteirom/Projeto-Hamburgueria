@@ -1,7 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
-
 package entities;
 
 /**
@@ -9,7 +8,8 @@ package entities;
  * @author Pedro
  */
 /**
- * Representa um adicional que pode ser acrescentado a um lanche (ex: bacon extra, queijo duplo).
+ * Representa um adicional que pode ser acrescentado a um lanche (ex: bacon
+ * extra, queijo duplo).
  */
 public class Adicional {
 
@@ -46,9 +46,9 @@ public class Adicional {
     public void setValor(double valor) {
         this.valor = valor;
     }
-    
-@Override
-public String toString(){
-    return "Adicional - ID: " + id + ", Nome: " + nome +", Valor: " + String.format("%.2f", valor) + "R$";
-}
+
+    @Override
+    public String toString() {
+        return "Adicional - ID: " + id + ", Nome: " + nome + ", Valor: " + String.format("%.2f", valor) + "R$";
+    }
 }

@@ -1,7 +1,10 @@
 package entities;
+
 /**
- *Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt
+ * to change this license Click
+ * nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this
+ * template
  */
 
 /**
@@ -9,11 +12,11 @@ package entities;
  * @author Pedro
  */
 /**
- * Representa um ingrediente utilizado nos lanches.
- * Armazena quantidade atual, unidade de medida e quantidade mínima para alerta de estoque.
+ * Representa um ingrediente utilizado nos lanches. Armazena quantidade atual,
+ * unidade de medida e quantidade mínima para alerta de estoque.
  */
 public class Ingrediente {
-    
+
     private int id;
     private String nome;
     private double quantidadeAtual;
@@ -67,22 +70,23 @@ public class Ingrediente {
     public void setQuantidadeMinima(double quantidadeMinima) {
         this.quantidadeMinima = quantidadeMinima;
     }
-    
-    public boolean estaEmAlerta() { 
+
+    public boolean estaEmAlerta() {
         return quantidadeAtual <= quantidadeMinima;
     }
-    
-    public void consumir(double quantidade) { 
-        this.quantidadeAtual = Math.max(0, this.quantidadeAtual - quantidade); 
+
+    public void consumir(double quantidade) {
+        this.quantidadeAtual = Math.max(0, this.quantidadeAtual - quantidade);
     }
-    
-    public void repor(double quantidade) { 
-        this.quantidadeAtual += quantidade; 
+
+    public void repor(double quantidade) {
+        this.quantidadeAtual += quantidade;
     }
-@Override
-public String toString(){
-    return "Ingrediente - ID:" + id + ", Nome: "  + nome + ", Quantidade: " + quantidadeAtual +  unidadeDeMedida + ", Minimo:" + quantidadeMinima
+
+    @Override
+    public String toString() {
+        return "Ingrediente - ID:" + id + ", Nome: " + nome + ", Quantidade: " + quantidadeAtual + unidadeDeMedida + ", Minimo:" + quantidadeMinima
                 + (estaEmAlerta() ? "ALERTA!!" : "");
-}
-    
+    }
+
 }

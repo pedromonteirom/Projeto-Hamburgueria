@@ -1,4 +1,5 @@
 package entities;
+
 /**
  *
  * @author Pedro
@@ -28,61 +29,61 @@ public class Venda {
         this.concluida = true;
     }
 
-    public int getId() { 
-        return id; 
+    public int getId() {
+        return id;
     }
-    
-    public void setId(int id) { 
-        this.id = id; 
+
+    public void setId(int id) {
+        this.id = id;
     }
-    
-    public int getIdPedido() { 
-        return idPedido; 
+
+    public int getIdPedido() {
+        return idPedido;
     }
-    
-    public void setIdPedido(int idPedido) { 
-        this.idPedido = idPedido; 
+
+    public void setIdPedido(int idPedido) {
+        this.idPedido = idPedido;
     }
-    
-    public int getIdExtrato() { 
+
+    public int getIdExtrato() {
         return idExtrato;
     }
-    
-    public void setIdExtrato(int idExtrato) { 
+
+    public void setIdExtrato(int idExtrato) {
         this.idExtrato = idExtrato;
     }
-    
-    public int getIdColaborador() { 
-        return idColaborador; 
+
+    public int getIdColaborador() {
+        return idColaborador;
     }
-    
+
     public void setIdColaborador(int idColaborador) {
-        this.idColaborador = idColaborador; 
+        this.idColaborador = idColaborador;
     }
-    
-    public String getData() { 
+
+    public String getData() {
         return data;
     }
-    
+
     public void setData(String data) {
-        this.data = data; 
+        this.data = data;
     }
-    
-    public String getHorario() { 
+
+    public String getHorario() {
         return horario;
     }
-    
-    public void setHorario(String horario) { 
-        this.horario = horario; 
+
+    public void setHorario(String horario) {
+        this.horario = horario;
     }
-    
-    public boolean isConcluida() { 
-        return concluida; 
+
+    public boolean isConcluida() {
+        return concluida;
     }
-    
+
     public void setConcluida(boolean concluida) {
-        this.concluida = concluida; }
-    
+        this.concluida = concluida;
+    }
 
     @Override
     public String toString() {

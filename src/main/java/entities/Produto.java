@@ -2,6 +2,7 @@ package entities;
 
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  *
  * @author Pedro
@@ -10,14 +11,13 @@ import java.util.List;
  * Representa um produto/lanche do cardápio.
  *
  *
- * Estratégia A — {private static} com get/set:
- * Vantagem: encapsulamento total — nenhuma outra classe pode alterar o contador
- * diretamente. Segue o princípio de menor privilégio.
- * Desvantagem: requer métodos extras (get/set), ligeiramente mais verboso.
+ * Estratégia A — {private static} com get/set: Vantagem: encapsulamento total —
+ * nenhuma outra classe pode alterar o contador diretamente. Segue o princípio
+ * de menor privilégio. Desvantagem: requer métodos extras (get/set),
+ * ligeiramente mais verboso.
  *
- * Estratégia B — {protected static}:
- * Vantagem: subclasses e classes do mesmo pacote podem ler/escrever diretamente,
- * reduzindo código boilerplate.
+ * Estratégia B — {protected static}: Vantagem: subclasses e classes do mesmo
+ * pacote podem ler/escrever diretamente, reduzindo código boilerplate.
  * Desvantagem: qualquer subclasse pode acidentalmente sobrescrever o valor,
  * violando o encapsulamento.
  */
@@ -26,11 +26,12 @@ public class Produto {
     // Estratégia A: private static + get/set
     private static int totalProdutosPrivate = 0;
 
-    public static int getTotalProdutosPrivate() { 
-        return totalProdutosPrivate; 
+    public static int getTotalProdutosPrivate() {
+        return totalProdutosPrivate;
     }
-    protected static void setTotalProdutosPrivate(int valor) { 
-        totalProdutosPrivate = valor; 
+
+    protected static void setTotalProdutosPrivate(int valor) {
+        totalProdutosPrivate = valor;
     }
 
     // Estratégia B: protected static, acessível por subclasses diretamente
@@ -50,44 +51,44 @@ public class Produto {
         totalProdutosProtected++;
     }
 
-    public int getIdDescricao() { 
-        return idDescricao; 
+    public int getIdDescricao() {
+        return idDescricao;
     }
-    
-    public void setIdDescricao(int idDescricao) { 
-        this.idDescricao = idDescricao; 
+
+    public void setIdDescricao(int idDescricao) {
+        this.idDescricao = idDescricao;
     }
-    
-    public String getDescricao() { 
-        return descricao; 
+
+    public String getDescricao() {
+        return descricao;
     }
-    
-    public void setDescricao(String descricao) { 
+
+    public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-    
-    public double getValor() { 
-        return valor; 
+
+    public double getValor() {
+        return valor;
     }
-    
-    public void setValor(double valor) { 
-        this.valor = valor; 
+
+    public void setValor(double valor) {
+        this.valor = valor;
     }
-    
-    public List<Adicional> getAdicionaisDisponiveis() { 
-        return adicionaisDisponiveis; 
+
+    public List<Adicional> getAdicionaisDisponiveis() {
+        return adicionaisDisponiveis;
     }
-    
+
     public void setAdicionaisDisponiveis(List<Adicional> adicionaisDisponiveis) {
-        this.adicionaisDisponiveis = adicionaisDisponiveis; 
+        this.adicionaisDisponiveis = adicionaisDisponiveis;
     }
-    
-    public void adicionarAdicional(Adicional a) { 
-        this.adicionaisDisponiveis.add(a); 
+
+    public void adicionarAdicional(Adicional a) {
+        this.adicionaisDisponiveis.add(a);
     }
 
     @Override
     public String toString() {
-        return "Produto - ID: " + idDescricao + ", Descrição: " + descricao + ", Valor: "  + String.format("%.2f", valor) + "R$" + ", Adicionais: " + adicionaisDisponiveis.size();
+        return "Produto - ID: " + idDescricao + ", Descrição: " + descricao + ", Valor: " + String.format("%.2f", valor) + "R$" + ", Adicionais: " + adicionaisDisponiveis.size();
     }
 }

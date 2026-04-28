@@ -12,6 +12,7 @@ package entities;
  * Representa uma região (bairro ou área) de entrega da hamburgueria.
  */
 public class Regiao {
+
     private int id;
     private String nome;
 
@@ -34,10 +35,7 @@ public class Regiao {
 
     @Override
     public String toString() {
-
         return "Regiao - ID: " + id + ", Nome: " + nome;
-
     }
     
-   
 }

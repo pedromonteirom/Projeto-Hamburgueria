@@ -9,8 +9,8 @@ package entities;
  * @author Dênio Mingote
  */
 /**
- * Representa um motoqueiro responsável pelas entregas.
- * O sistema mantém no mínimo 5 motoqueiros ativos.
+ * Representa um motoqueiro responsável pelas entregas. O sistema mantém no
+ * mínimo 5 motoqueiros ativos.
  */
 public class Motoqueiro {
 
@@ -61,7 +61,7 @@ public class Motoqueiro {
 
     @Override
     public String toString() {
-        return "Motoqueiro - ID: " + id + ", Nome: " + nome + ", Telefone: '" + telefone +  
-                ", ID Região: " + idRegiao + ", Disponivel: " + disponivel;
+        return "Motoqueiro - ID: " + id + ", Nome: " + nome + ", Telefone: '" + telefone
+                + ", ID Região: " + idRegiao + ", Disponivel: " + disponivel;
     }
 }
