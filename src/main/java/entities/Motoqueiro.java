@@ -61,12 +61,7 @@ public class Motoqueiro {
 
     @Override
     public String toString() {
-        return "Motoqueiro: " +
-                "Id: " + id +
-                ", nome: '" + nome + '\'' +
-                ", telefone: '" + telefone + '\'' +
-                ", idRegiao: " + idRegiao +
-                ", disponivel: " + disponivel +
-                '.';
+        return "Motoqueiro - ID: " + id + ", Nome: " + nome + ", Telefone: '" + telefone +  
+                ", ID Região: " + idRegiao + ", Disponivel: " + disponivel;
     }
 }

@@ -1,5 +1,8 @@
 package entities;
-
+/**
+ *
+ * @author Pedro
+ */
 /**
  * Representa uma venda concluída, associando pedido, extrato e colaborador.
  */

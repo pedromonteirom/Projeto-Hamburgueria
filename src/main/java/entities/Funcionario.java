@@ -10,7 +10,7 @@ package entities;
  */
 /**
  * Representa um funcionário do sistema.
- * Herda de {@link Usuario}.
+ * Herda de Usuario.
  */
 public class Funcionario extends Usuario{
        

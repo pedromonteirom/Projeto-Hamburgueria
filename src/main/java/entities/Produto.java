@@ -2,7 +2,10 @@ package entities;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ *
+ * @author Pedro
+ */
 /**
  * Representa um produto/lanche do cardápio.
  *
@@ -23,10 +26,14 @@ public class Produto {
     // Estratégia A: private static + get/set
     private static int totalProdutosPrivate = 0;
 
-    public static int getTotalProdutosPrivate() { return totalProdutosPrivate; }
-    protected static void setTotalProdutosPrivate(int valor) { totalProdutosPrivate = valor; }
+    public static int getTotalProdutosPrivate() { 
+        return totalProdutosPrivate; 
+    }
+    protected static void setTotalProdutosPrivate(int valor) { 
+        totalProdutosPrivate = valor; 
+    }
 
-    // Estratégia B: protected static — acessível por subclasses diretamente
+    // Estratégia B: protected static, acessível por subclasses diretamente
     protected static int totalProdutosProtected = 0;
 
     private int idDescricao;

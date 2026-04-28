@@ -1,5 +1,8 @@
 package entities;
-
+/**
+ *
+ * @author Pedro
+ */
 /**
  * Representa uma estação de preparo da hamburgueria.
  * O sistema possui exatamente 3 estações em vetor estático de tamanho fixo.
