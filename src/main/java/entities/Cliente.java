@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package entities;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -44,43 +45,44 @@ public class Cliente implements Comparator<Cliente> {
         if (id >= proximoId) proximoId = id + 1;
     }
 
-    public int getId() { 
+    public int getId() {
         return id; 
     }
     public void setId(int id) { 
-        this.id = id;
+        this.id = id; 
     }
-    public String getNome() { 
+    public String getNome() {
         return nome; 
     }
     public void setNome(String nome) { 
-        this.nome = nome;
+        this.nome = nome; 
     }
     public String getTelefone() { 
-        return telefone; 
+        return telefone;
     }
-    public void setTelefone(String telefone) { 
+    public void setTelefone(String telefone) {
         this.telefone = telefone; 
     }
-    public String getEndereco() { 
-        return endereco; 
+    public String getEndereco() {
+        return endereco;
     }
-    public void setEndereco(String endereco) {
-        this.endereco = endereco; 
+    public void setEndereco(String endereco) { 
+        this.endereco = endereco;
     }
     public List<Integer> getHistoricoIdPedidos() { 
-        return historicoIdPedidos; 
+        return historicoIdPedidos;
     }
-    public void setHistoricoIdPedidos(List<Integer> historicoIdPedidos) { 
+    public void setHistoricoIdPedidos(List<Integer> historicoIdPedidos) {
         this.historicoIdPedidos = historicoIdPedidos; 
     }
     public int getIdUltimoPedido() {
-        return idUltimoPedido; 
+        return idUltimoPedido;
     }
     public void setIdUltimoPedido(int idUltimoPedido) {
-        this.idUltimoPedido = idUltimoPedido; }
+        this.idUltimoPedido = idUltimoPedido; 
+    }
     public String getDataUltimoPedido() { 
-        return dataUltimoPedido; 
+        return dataUltimoPedido;
     }
     public void setDataUltimoPedido(String dataUltimoPedido) { 
         this.dataUltimoPedido = dataUltimoPedido; 
@@ -99,9 +101,11 @@ public class Cliente implements Comparator<Cliente> {
     }
 
     public static Comparator<Cliente> porTelefone() {
-        return Comparator.comparing(Cliente::getTelefone); }
+        return Comparator.comparing(Cliente::getTelefone); 
+    }
     public static Comparator<Cliente> porId() { 
-        return Comparator.comparingInt(Cliente::getId); }
+        return Comparator.comparingInt(Cliente::getId);
+    }
 
     @Override
     public String toString() {
